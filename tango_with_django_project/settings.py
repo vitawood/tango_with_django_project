@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
+from django.conf.global_settings import SESSION_EXPIRE_AT_BROWSER_CLOSE
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -106,6 +107,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_URL ='/rango/login/'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 
 # Internationalization
